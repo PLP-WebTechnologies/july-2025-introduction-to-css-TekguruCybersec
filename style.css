@@ -1,0 +1,112 @@
+/* --- Global & Layout Styling --- */
+
+/* Reset box-sizing for consistent Box Model behavior across all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto; /* Center the container on the page */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* --- The Box Model in Action --- */
+
+/* General styling for content sections */
+.content-box {
+    margin: 20px; /* Outer spacing between sections */
+    padding: 20px; /* Inner spacing around content */
+    border: 2px solid #ccc; /* A visible border to show its position */
+    border-radius: 6px;
+}
+
+.intro-section {
+    border-color: #007BFF;
+    background-color: #e6f0ff;
+}
+
+.image-section {
+    text-align: center;
+    border-color: #28a745;
+    background-color: #e9f7eb;
+}
+
+/* Make images responsive to the container */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
+    margin-top: 15px;
+}
+
+
+/* --- Selector & Typography Styling --- */
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px; /* This padding moves the list markers away from the edge */
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Class Selector */
+.styled-item {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* ID Selector - Specific styling for a unique element */
+#unique-item {
+    font-style: italic;
+    text-decoration: underline;
+    background-color: #ffc107;
+    padding: 3px 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.final-note {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: right;
+    margin-top: 20px;
+}
